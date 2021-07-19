@@ -1,0 +1,60 @@
+<manifest alg="2" build="751" opt="false" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="485514566"/>
+    <file name="master_a-master.css" crc="4232016983" ref="blog:index"/>
+    <file name="blog.css" crc="47960859" ref="blog"/>
+    <file name="index.css" crc="53580225" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="museredirect.js" crc="236897542" ref="index:blog"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="museutils.js" crc="441941709" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="pie.js" crc="3827607177" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="jquery.musemenu.js" crc="3788803530" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="jquery.watch.js" crc="4068933136" ref="index:blog:tablet>blog:tablet>index"/>
+  </folder>
+  <folder name="images">
+    <file name="blank.gif" crc="4208392903" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="u2755.png" crc="3834091186" ref="index:blog"/>
+    <file name="u2755-r.png" crc="3935059448" ref="index:blog"/>
+    <file name="u2755-a.png" crc="3810878441" ref="index:blog"/>
+    <file name="u2760.png" crc="232736735" ref="index:blog"/>
+    <file name="u2760-r.png" crc="3957953769" ref="index:blog"/>
+    <file name="u2760-a.png" crc="4205098902" ref="index:blog"/>
+    <file name="fb-f-logo__blue_50.png" crc="268345729" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="twitter-bird-white-on-blue-1-.png" crc="89243024" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="you tube.png" crc="4146215548" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="linkedin_logo60px-1-.png" crc="379650796" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="shnerglelogo.png" crc="68608425" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="shnergle tombstone.jpg" crc="3996906017" ref="index:tablet>index"/>
+    <file name="shnergle app icon (for ppt).png" crc="4249834193" ref="index:tablet>index"/>
+    <file name="-around me- ios7.png" crc="3977503902" ref="index:tablet>index"/>
+    <file name="bar manager screenshot.png" crc="4210238778" ref="index:tablet>index"/>
+    <file name="london evening standard.png" crc="306013510" ref="index:tablet>index"/>
+    <file name="gizmodo 1.png" crc="29898573" ref="index:tablet>index"/>
+    <file name="jn7a5648 (300x200).jpg" crc="381302663" ref="index:tablet>index"/>
+    <file name="jn7a5665 (2) (300x200).jpg" crc="123030486" ref="index:tablet>index"/>
+    <file name="wp_20130322_007 (300x169).jpg" crc="4170394323" ref="index:tablet>index"/>
+    <file name="wp_20130322_003 (300x169).jpg" crc="4055821600" ref="index:tablet>index"/>
+    <file name="wp_20130322_004 (300x169).jpg" crc="288456025" ref="index:tablet>index"/>
+    <file name="octocat.png" crc="4260686536" ref="index:tablet>index"/>
+    <file name="u2787-full.png" crc="172986601" ref="index:blog:tablet>blog:tablet>index"/>
+    <file name="u2342.png" crc="3834091186" ref="tablet>blog:tablet>index"/>
+    <file name="u2342-r.png" crc="3935059448" ref="tablet>blog:tablet>index"/>
+    <file name="u2342-a.png" crc="3810878441" ref="tablet>blog:tablet>index"/>
+    <file name="u1128.png" crc="232736735" ref="tablet>blog:tablet>index"/>
+    <file name="u1128-r.png" crc="3957953769" ref="tablet>blog:tablet>index"/>
+    <file name="u1128-a.png" crc="4205098902" ref="tablet>blog:tablet>index"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="master_a-master.css" crc="506149955" ref="tablet>index:tablet>blog"/>
+      <file name="index.css" crc="4135701828" ref="tablet>index"/>
+      <file name="blog.css" crc="4076811381" ref="tablet>blog"/>
+    </folder>
+    <file name="blog.html" crc="219003857" mt="1382340012700"/>
+    <file name="index.html" crc="221988669" mt="1382442755570"/>
+  </folder>
+  <file name="index.html" crc="287595981" mt="1382442755554"/>
+  <file name="blog.html" crc="187643676" mt="1382340000721"/>
+</manifest>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shnergle Post Mortem   - Shnergle blog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="I led Shnergle. It failed. The buck stops here. I had bucket loads of life experience, but I was naïve at starting businesses; I was well outside my comfort zone (though would freely" />
+<meta property="template" content="mantra" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://www.shnergle.com/blog/xmlrpc.php" />
+<link rel="shortcut icon" href="http://www.shnergle.com/blog/wp-content/uploads/2013/04/S-150x150.png" /><link rel="apple-touch-icon" href="http://www.shnergle.com/blog/wp-content/uploads/2013/04/S-150x150.png" /><link rel="alternate" type="application/rss+xml" title="Shnergle blog &raquo; Feed" href="http://www.shnergle.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shnergle blog &raquo; Comments Feed" href="http://www.shnergle.com/blog/comments/feed/" />
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-39876244-1']);
+				            _gaq.push(['_setCustomVar',1,'post_type','post',3],['_setCustomVar',3,'category','inside-shnergle',3],['_setCustomVar',4,'categories','inside-shnergle',3],['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Shnergle blog &raquo; Shnergle Post Mortem Comments Feed" href="http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/feed/" />
+<link rel='stylesheet' id='social-widget-css'  href='http://www.shnergle.com/blog/wp-content/plugins/social-media-widget/social_widget.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='mantras-css'  href='http://www.shnergle.com/blog/wp-content/themes/mantra/style.css?ver=3.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.shnergle.com/blog/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://www.shnergle.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.shnergle.com/blog/wp-content/themes/mantra/js/frontend.js?ver=3.6'></script>
+<script type='text/javascript' src='http://www.shnergle.com/blog/wp-includes/js/comment-reply.min.js?ver=3.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shnergle.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shnergle.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='It&#8217;s the end of the line for Shnergle' href='http://www.shnergle.com/blog/2013/10/21/its_the_end_of_the_line_for_shnergle/' />
+<meta name="generator" content="WordPress 3.6" />
+<link rel='canonical' href='http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/' />
+<link rel='shortlink' href='http://www.shnergle.com/blog/?p=164' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Shnergle Post Mortem" />
+<meta property="og:url" content="http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/" />
+<meta property="og:description" content="I led Shnergle. It failed. The buck stops here. I had bucket loads of life experience, but I was naïve at starting businesses; I was well outside my comfort zone (though would freely admit to it). ..." />
+<meta property="og:site_name" content="Shnergle blog" />
+<meta property="og:image" content="http://www.shnergle.com/blog/wp-content/uploads/2013/10/Post-Mortem.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:image" content="http://www.shnergle.com/blog/wp-content/uploads/2013/10/Post-Mortem.jpg" />
+<meta name="twitter:card" content="photo" />
+
+<style type="text/css">
+#wrapper { width:65% ;}
+#access, #colophon, #branding, #main {width:100%;}
+#access .menu-header, div.menu {width:96% ;}
+#content {margin-left:2%;}
+#primary, #secondary {padding-left:1%;}
+#content { width:67%;}
+#primary,#secondary {width:28%;}#content, #content p, #content ul, #content ol, #content input, #content select, #content textarea{
+font-size:14px;
+}
+
+ #access ul li { background-color:#FFFFFF}  * , .widget-title {font-family:Arial, Helvetica, sans-serif ; } #content h1.entry-title a, #content h2.entry-title a, #content h1.entry-title , #content h2.entry-title {font-family:Arial, Helvetica, sans-serif ; } .widget-area *  {font-family:Arial, Helvetica, sans-serif ; } .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6  {font-family:Arial, Helvetica, sans-serif ; } #content .wp-caption {  background-color:#FFF;}
+  .nocomments, .nocomments2 {display:none;}  #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content .entry-title, #site-title a , #site-description { text-shadow:none; moz-text-shadow:none; -webkit-text-shadow:none ;}
+#header-container > div { margin-top:20px;}
+#header-container > div { margin-left:40px;}
+ body { background-color:#7F7F7F !important ;} #header { background-color:#FF6600  ;} #footer { background-color:#222222  ;} #footer2 { background-color:#4c4c4c  ;} #site-title span a { color:#68AEE1  ;} #site-description { color:#999999  ;} #content, #content p, #content ul, #content ol { color:#333333  ;} .widget-area a:link, .widget-area a:visited, a:link, a:visited ,#searchform #s:hover , #container #s:hover, #access a:hover, #wp-calendar tbody td a , #site-info a ,#site-copyright a, #access li:hover > a, #access ul ul :hover > a { color:#0D85CC;}  a:hover, .entry-meta a:hover, .entry-utility a:hover , .widget-area a:hover { color:#12a7ff ;} #content .entry-title a, #content .entry-title, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6{ color:#68AEE1 ;} #content .entry-title a:hover { color:#4C4C4C ;} .widget-title,#footer-widget-area .widget-title { background-color:#4C4C4C ;} .widget-title { color:#68AEE1  ;} #footer-widget-area .widget-title { color:#0C85CD ; ;} #footer-widget-area a { color:#666666  ;} #footer-widget-area a:hover { color:#888888  ;} #content p, .entry-content ul, .entry-summary ul , .entry-content ol, .entry-summary ol { margin-bottom:1.5em;}  .entry-meta .entry-time {display:none;} 
+#branding { height:100px ;}
+</style>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><style>/* Mantra Custom CSS */</style>
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+ #access ul  li,
+.edit-link a ,
+ #footer-widget-area .widget-title, .entry-meta,.entry-meta .comments-link,
+.short-button-light, .short-button-dark ,.short-button-color ,blockquote  {
+     position:relative;
+     behavior: url(http://www.shnergle.com/blog/wp-content/themes/mantra/js/PIE/PIE.php);
+   }
+
+#access ul ul {
+-pie-box-shadow:0px 5px 5px #999;
+}
+   
+#access  ul  li.current_page_item,  #access ul li.current-menu-item ,
+#access ul  li ,#access ul ul ,#access ul ul li, .commentlist li.comment	,.commentlist .avatar,
+ .nivo-caption, .theme-default .nivoSlider {
+     behavior: url(http://www.shnergle.com/blog/wp-content/themes/mantra/js/PIE/PIE.php);
+   }
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script>
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+document.createElement('hgroup');
+</script>
+<![endif]-->
+<script type="text/javascript">
+function makeDoubleDelegate(function1, function2) {
+// concatenate functions
+    return function() { if (function1) function1(); if (function2) function2(); }
+}
+
+function mantra_onload() {
+
+
+     // Add responsive videos
+     if (jQuery(window).width() < 800) jQuery(".entry-content").fitVids();
+}; // mantra_onload
+
+
+jQuery(document).ready(function(){
+     // Add custom borders to images
+     jQuery("img.alignnone, img.alignleft, img.aligncenter,  img.alignright").addClass("imageNone");
+
+	// Add select navigation to small screens
+     jQuery("#access > .menu > ul").tinyNav({
+          	header: ' = Menu = '
+			});
+});
+
+// make sure not to lose previous onload events
+window.onload = makeDoubleDelegate(window.onload, mantra_onload );
+</script>
+</head>
+<body class="single single-post postid-164 single-format-standard">
+
+<div id="toTop"> </div>
+<div id="wrapper" class="hfeed">
+
+
+<header id="header">
+
+		<div id="masthead">
+
+			<div id="branding" role="banner" >
+
+				
+	<div id="header-container">
+
+
+<div><a id="logo" href="http://www.shnergle.com/blog/" ><img title="" alt="" src="http://www.shnergle.com/blog/wp-content/uploads/2013/04/shnerglelogo7-300x86.png" /></a></div><div class="socials" id="sheader">
+			<a target="_blank" rel="nofollow" href="https://www.facebook.com/shnergle" class="socialicons social-Facebook" title="Facebook"><img alt="Facebook" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/Facebook.png" /></a>
+			<a target="_blank" rel="nofollow" href="https://twitter.com/shnergle" class="socialicons social-Twitter" title="Twitter"><img alt="Twitter" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/Twitter.png" /></a>
+			<a target="_blank" rel="nofollow" href="http://www.youtube.com/user/ShnergleVids" class="socialicons social-YouTube" title="YouTube"><img alt="YouTube" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/YouTube.png" /></a>
+			<a target="_blank" rel="nofollow" href="http://www.linkedin.com/company/shnergle" class="socialicons social-LinkedIn" title="LinkedIn"><img alt="LinkedIn" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/LinkedIn.png" /></a></div></div>				<div style="clear:both;"></div>
+
+			</div><!-- #branding -->
+
+			<nav id="access" class="jssafe" role="navigation">
+
+				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+<div class="menu"><ul id="prime_nav" class="menu"><li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a title="home" href="http://www.shnergle.com/blog" >Blog home</a></li>
+</ul></div>
+			</nav><!-- #access -->
+
+		</div><!-- #masthead -->
+
+	<div style="clear:both;"> </div>
+
+</header><!-- #header -->
+<div id="main">
+	<div  id="forbottom" >
+		
+		<div style="clear:both;"> </div>
+
+									
+		<section id="container">
+			<div id="content" role="main">
+						
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://www.shnergle.com/blog/2013/10/21/its_the_end_of_the_line_for_shnergle/" rel="prev"><span class="meta-nav">&laquo;</span> It&#8217;s the end of the line for Shnergle</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-164" class="post-164 post type-post status-publish format-standard hentry category-inside-shnergle">
+					<h1 class="entry-title">Shnergle Post Mortem</h1>
+										<div class="entry-meta">
+						&nbsp; <span class="author vcard" >By  <a class="url fn n" href="http://www.shnergle.com/blog/author/robtregaskes/" title="View all posts by Robert Tregaskes">Robert Tregaskes</a> <span class="bl_sep">|</span></span>  <span class="onDate"> <a href="http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/" title="3:54 pm" rel="bookmark"><span class="entry-date">23/10/2013</span> <span class="entry-time"> - 3:54 pm</span></a> <span class="bl_sep">|</span> </span> <span class="bl_categ"> <a href="http://www.shnergle.com/blog/category/inside-shnergle/" title="View all posts in inside Shnergle" rel="tag">inside Shnergle</a> </span>  					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p class="MsoNormal"><a href="http://www.shnergle.com/blog/wp-content/uploads/2013/10/Post-Mortem.jpg" ><img class="aligncenter size-full wp-image-178" alt="Post Mortem" src="http://www.shnergle.com/blog/wp-content/uploads/2013/10/Post-Mortem.jpg" width="600" height="234" /></a>I led Shnergle. It failed. The buck stops here.</p>
+<p class="MsoNormal">I had bucket loads of life experience, but I was naïve at starting businesses; I was well outside my comfort zone (though would freely admit to it). Through the help of a lot of advice and online blogs (<a href="http://www.bothsidesofthetable.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.bothsidesofthetable.com']);">especially yours Mark Suster</a>) we got a lot right, but we still made a bucket load of fundamental errors that I would tackle differently next time. A number of people put their faith in me (and their cash) and I feel I have let them down; the only saving grace is that the cash amounts were relatively <a href="http://www.crunchbase.com/company/shnergle" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.crunchbase.com']);">small</a> (courtesy of the government <a href="http://www.seis.co.uk/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.seis.co.uk']);">SEIS scheme</a>) and we have all learned a bucket load in the process.</p>
+<p class="MsoNormal">In consultation with the team I have pulled together a comprehensive ‘warts and all’ post mortem of what we got right and what we got wrong. It is not short (16 min read) as there is a lot to cover and I don’t want to do it in too cold and dispassionate a manner.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Team</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">The importance of a Co-founder.</b> You need to be a stronger person than I to start a business on your own. Having someone who is in the same boat as you to bounce things off and share the journey with is critical. Plenty of blog posts have been expended on the importance of having complementing co-founders; whilst this is critical, that complementing can happen in a number of ways rather than just the ‘standard’ one coder plus one business type; real life isn’t that neat. In the spirit of 80% now is better than 100% late, work with people whose character compliments yours and with whom you can endure stress. <a href="http://uk.linkedin.com/in/jonnybull" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Jonny</a> and I have a lot of shared history from the Army and inherently ‘get’ each other. We know we <a href="http://steveblank.com/2013/07/29/building-great-founding-teams/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://steveblank.com']);">always have each other’s back</a> but we aren’t shy about robustly challenging each other. I am the accelerator and he is the brake. We both know how to lead and how to follow; if you can’t follow you can’t lead. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Hire for character and attitude, flexibly scale up cost (salary) with competence.</b> I still don’t know how we did it when we hired <a href="http://uk.linkedin.com/in/schakaki/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Adam</a>, <a href="http://uk.linkedin.com/in/sjohansen/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Stian</a> and <a href="http://uk.linkedin.com/pub/harshita-balaga/53/b45/a29/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Harshita</a>, but we hit the jackpot. They learned fast, worked crazy hard, and asked for very little in return. When we started they said <i style="mso-bidi-font-style: normal;">‘we’ve never made an iPhone app before, we don’t know if we can do it’</i>; I replied with <i style="mso-bidi-font-style: normal;">‘don’t worry, I’ve never built a company before so we’re all learning here!&#8217; </i>Considering it is the first mobile app any of the team have built I think it is a pretty awesome first effort, and was produced and iterated very fast. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">One of the Founders must ‘get’ the technology. </b>I built my first PC when I was at school. At <span class="SpellE">Uni</span> I studied Engineering before I dropped out to join the Army; as part of that I learned basic computer programming (in C). I used to be heavily into computer games as a kid and would script some of my own levels. Although there has been massive skill fade through my time in the Army and banking and my attempts to get back up to speed on <a href="http://www.codecademy.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.codecademy.com']);"><span class="SpellE">Codecademy</span></a> have had limited success, I fundamentally understand the basics behind how computer software is built. I am never going to be able to build it as quickly and as well as a hard-core coder like <a href="http://uk.linkedin.com/in/schakaki/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Adam</a>, but I can at least have a reasonable <span class="GramE">conversation</span> with him about what we are doing and not get completely lost. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Concept</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t do <i style="mso-bidi-font-style: normal;">unqualified</i> product picking</b> – I am an entrepreneur. I have led soldiers in 2 wars. I have an MBA. I can (<i style="mso-bidi-font-style: normal;">relatively </i>comfortably) manage massive personal risk. I am <i style="mso-bidi-font-style: normal;">NOT</i> your average consumer; I think very differently. I should <i style="mso-bidi-font-style: normal;">NOT</i> be a (consumer) <a href="http://startupanswers.quora.com/What-is-a-product-picker" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://startupanswers.quora.com']);">product picker</a> but should conduct more ruthless experiments to test concepts. Likewise we thought we had validation of the student market from our developers; we didn’t. They worked crazy hours for very little return, based purely on pursuit of a vision; that is <i style="mso-bidi-font-style: normal;">NOT</i> standard student behaviour. <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Importance of a clean message.</b> Distil your idea down to a simple message that a 5 year old would get in under 3 seconds – that’s about how much attention people are going to give you. This should be done before anything else. We only got to that stage just before we launched, and even then it could have been a lot better. Considering I have been taught and used <a href="http://www.barbaraminto.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.barbaraminto.com']);"><i style="mso-bidi-font-style: normal;">Pyramid Story Telling</i></a> in the past in consulting roles, I have no real excuse here. <b style="mso-bidi-font-weight: normal;">Fail! </b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t be too quiet with idea</b> – No-one can match the passion, determination or depth of thought of a founder so don’t be shy about being public with it (<a href="https://medium.com/design-startups/48b9fd513bff?" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://medium.com']);">bin all that NDA tosh</a>). If it’s a good concept it will amass following; if it doesn’t, why not? Build a community before you even start the company. We were far too secretive. <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Start with the market.</b><br />
+Speak to potential customers and people with key industry insights face to face to shape your initial concept, but then use social media to ruthlessly test your assumptions in the market before you build or finance anything.</p>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpFirst" style="text-indent: -18.0pt; mso-list: l3 level1 lfo2;">       Facebook provides some incredible (if somewhat hidden) market research tools. If you want to find out about market demographics and sizes (in terms of people) start setting up an advert and playing with the targeting options – it shows you how many people in a given segment; <span class="SpellE">iOS</span> or Android first for example. It’s not perfect but it’s better than anything else out there you can find for free, and it’s very quick to do.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l3 level1 lfo2;">      With the exception of a minuscule number of products that ‘go viral’ with instant product/market fit, almost all have to pay to ‘acquire’ users. Considering most people don’t like conflict and won’t give you honest (if negative) feedback face to face, you can kill two birds with one stone. Setup some Facebook adverts for your Facebook page and get an idea of Customer Acquisition Cost up front.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpLast" style="text-indent: -18.0pt; mso-list: l3 level1 lfo2;">      Most people get notifications from Twitter when they get a new follower. Sure some will have turned these off or may ignore them, but take out a very cheap (£7pm) <a href="http://manageflitter.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://manageflitter.com']);"><span class="SpellE">ManageFlitter</span></a> subscription and use your ‘product’ Twitter account to follow the followers of potential competitors – you can analyse how many follow you back.</div>
+</li>
+</ul>
+<p class="MsoNormal">We spoke to a lot of bars and merchants, but we didn&#8217;t try any Facebook ads or Twitter stuff until pretty much launch. It was ultimately an excessively high User Acquisition Cost which meant the company had to shut down.<b style="mso-bidi-font-weight: normal;"> Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Inaccurate Market positioning.</b> We thought our app would be most popular with students. It was actually most popular with professionals aged 25-40 (User Acquisition Cost was 85% lower!) but they are fixated with social concerns over and above saving time. Whilst professionals want to save time, they are not nearly as engaged with mobile apps, creating a critical demand problem (we had 28% of users return after their first day, and 8% returning 4 times or more). We could have learned this much earlier with Facebook Ads. <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Are you well positioned to build a community quickly and cheaply?</b> If your idea relies on virality or massive uptake and you/your primary social circles aren’t massively active on social media, you will have a hard time building a community and are hugely unlikely to get any kind of virality. A small core of our friends were huge advocates, but the majority completely ignored Shnergle. It’s not personal; they just weren’t buying what we were selling….even for free! <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Does your idea only monetise at scale?</b> If your idea can only be monetised at scale, head to San Francisco / Silicon Valley. There isn’t enough risk capital, or enough risk appetite, in the UK/EU venture market to pour capital into unproven R&amp;D concepts. If you want to build in the UK, find some way of charging money from day one. You can still use a freemium structure to up-sell later. Shnergle was never going to monetise before it had scaled fairly significantly. <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Financing</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Fundraising is a distraction – make it quick</b>. We were not from Tech Startup backgrounds so didn’t feel conventional angels were a viable option. We raised our initial equity capital (<a href="http://www.crunchbase.com/company/shnergle" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.crunchbase.com']);">£75k</a>) in three weeks by breaking it down into bite size chunks (standard buy-in was £5k) and going to people who knew us the best and who knew that when we say we are going to do something, we do it. Courtesy of the government SEIS scheme the standard amount at risk was £2.5k, pretty minor considering the opportunity we thought we had, and the cost of your average well paid middle class holiday. In some cases I had to caution investors from piling in too much cash so as to properly manage their risk. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Avoid legal costs from financing rounds. </b>Don’t bother with Option schemes or shareholder agreements until raising institutional capital as they are a waste of time and legal costs to setup; they will also need to be changed if you get institutional investors on board. Letters of subscription are the way forward and cost next to nothing. Everything has to be done on trust and kept simple so you can focus on all the other clearly more important parts of the business. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t try and use a ‘valuation’ when pulling together your first cash.</b> Any valuation model that is not based on a firmly quantifiable growth trajectory, or better still robust cash flows, is highly questionable and subject to massive margins of error. VCs are familiar with the dark arts of trying to pin the startup tail on the right part of the valuation donkey, but you are not. In due course you can start to get a feel off other entrepreneurs and investors as to what the market is likely to value you at, but to begin with that is all rubbish. Work out how much cash you think you need, and how much equity you are willing to give away; make sure there is plenty of room for outsize rewards for those taking the early risk, but that you don’t dilute yourself too much before you tackle your proper institutional investment rounds. We worked on 10% in exchange for £75k (thus valuation at £750k – pretty much an upper limit). In the end we sold 7.66% because I invested a load myself as part of our £75k. Keeping the founders at 92.33% would have given us plenty of flexibility if we were actually able to raise a Seed round. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Accelerators – Yes or no? </b>We looked at a number of accelerators – <a href="http://uk.wayra.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.wayra.org']);">WAYRA</a>, <a href="http://www.seedcamp.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.seedcamp.com']);">Seedcamp</a> etc. We decided to avoid them based on a few factors:</p>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpFirst" style="text-indent: -18.0pt; mso-list: l4 level1 lfo4;">      We got the feeling there was a lot of pitching and a lot of chatting with ‘mentors’, but we couldn’t really see how those mentors would be much use dropping into our business if they didn’t really get a good understanding of it. This seemed like a lot of friction and distraction to us when frankly we could read up on it online<i style="mso-bidi-font-style: normal;">. Think full time MBA vs. MOOC as an analogy.</i></div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l4 level1 lfo4;">      From our research the investment terms seemed pretty standardised for each company, and we could get better ones with our actual investors.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpLast" style="text-indent: -18.0pt; mso-list: l4 level1 lfo4;">      The accelerators appeared to come with a lot of hype and publicity that we didn’t want to be exposed to too early; we wanted to stay under the radar for a bit.</div>
+</li>
+</ul>
+<p class="MsoNormal">In hindsight I don’t think it’s a clear cut case whether an accelerator would have been a good idea. I think we may have learned more by making mistakes in isolation than if we had just ‘done what we were told’ in an accelerator. Maybe the hype and publicity would have helped our community problem? Perhaps we would have made mistakes faster in an accelerator and been able to fix them? Undoubtedly our networks would be stronger if we had done an accelerator. <b style="mso-bidi-font-weight: normal;">Neutral.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t waste people’s time.</b> We have been lucky enough to be introduced by email to a number of prominent VCs in London, one of which was even good enough to take a non-investment meeting just to chat through advice. There were very few bites when we first reached out (see <i style="mso-bidi-font-style: normal;">‘Importance of clean message’</i>) so we waited to try and build a compelling case before reaching out to start our Seed Round. In the end we didn’t think there was a compelling case so didn’t waste the VC’s time trying to pitch them, we shut down instead. Hopefully they will respect us more for this and we can build a relationship ready for next time when we do this better. Only time will tell. <b style="mso-bidi-font-weight: normal;">Success! (Of sorts)</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t underestimate the costs of business.</b> The barriers to entry to internet/mobile businesses are very low, resulting on huge barriers to success due to crowded markets. Don’t under estimate the costs of marketing your product, both in promotional spending and marketing staff, growth hacking etc. This all needs to be paid for either with revenues, investment or both. If you think you are going to cover it with Investment (such as VC), there had better be a compelling case as to why it is basically printing money for them. <b style="mso-bidi-font-weight: normal;">Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Keep it Lean.</b> Any money spent on testing a concept is at risk of being money wasted if that concept doesn’t work out, so spend as little as possible. Professional Coders and designers might be able to get stuff going in their spare time for free, but if you’re not one of these, and you don’t have a network of them, you are going to have to put some time and cash into getting things going. We got a company from slides to market, with 5 people working near on full time for 6 months, with no prior tech company experience and zero tech networks, all on £75k; less if you factor in that there is still a bit left. I think that is pretty damn lean considering we were all having to live off our Shnergle Salaries! <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Marketing</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Market to people when they are receptive to it.</b> We tried loads of different ways to market the app, but fundamentally the most cost effective ones were when people are receptive to the marketing:</p>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpFirst" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Inbound ‘content’ marketing.</i> Videos are most effective inbound marketing, followed by imagery, then blogs. Good blogs can take ages if you are bad at them (me), as do videos. Focus on photos/imagery initially. We found Facebook to be massively more effective than Twitter for content distribution. Inbound marketing worked well for growing our Facebook following, and our Facebook following was best for getting downloads.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Promoting to people on nights out in bars. </i>Attractive promo people cost money and although you get good qualitative feedback, you don’t get many users. Even without the promo people it still takes time. People are just not that receptive when on nights out.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Materials in bars (flyers, posters etc.).</i> We know we got a fair bit of referral traffic from these from measuring QR codes, but not enough to justify the cost and fundamentally they didn’t materially increase our user base.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Pitching merchants – individually and en masse.</i> We had loads of positive feedback, but without the users they really aren’t interested. The 2 bars that did become official venues only became venues because we were good customers and they wanted to keep us happy/help us out.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><span class="SpellE"><i style="mso-bidi-font-style: normal;">      Flyering</i></span><i style="mso-bidi-font-style: normal;"> at <span class="SpellE">freshers</span> fairs.</i> We were able to build significant awareness this way, but it was time consuming and resulted in precious few user installs; we were pretty glad we didn’t pay the rip-off fees to host a stand but instead either snuck in gorilla style or <span class="SpellE">flyer’d </span>outside.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Wristbands. </i>These worked well for a short period of time – lots of people wanted them, but then they got home, took them off and their value became limited.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpMiddle" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Media. </i>We got some great press coverage – a half page feature in the Evening Standard, top apps of the week in <span class="SpellE">Gizmodo</span>, and a load of coverage from getting the guys at the front of the iPhone 5S launch queue to wear our t-shirts. The evening standard article got us a 21% jump in users over night, but considering the distribution and number of impressions of that story it was very small in absolute numbers. It was also not easily repeatable.</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="MsoListParagraphCxSpLast" style="text-indent: -18.0pt; mso-list: l2 level1 lfo5;"><i style="mso-bidi-font-style: normal;">      Facebook ads.</i> Mobile App install Ads in user’s timelines work more effectively than anything else we have tried. As they are completely measurable they can be optimised and tweaked to drop User Acquisition Cost over time. If I was ever to market a consumer product again I would spend most of my outbound marketing budget on Facebook <a href="http://venturebeat.com/2013/10/16/facebook-ad-profit-a-staggering-1790-more-on-iphone-than-android/#2J6iLiLwKHELDsYO.02" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://venturebeat.com']);">Newsfeed Ads</a>.</div>
+</li>
+</ul>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Success! Eventually…. after many wrong turns….</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Facebook is a double edged sword.</b> You need to create a profile on App Centre in Facebook if you want to run Mobile App Install Ads in Facebook. This is great for discovery, but has one real pain in the ass feature – public Monthly Active User Count. This is great once you are up to scale as it aids transparency and attracts users based on the herd mentality, but it really doesn’t help when you are starting out : <i style="mso-bidi-font-style: normal;">‘Hmm so this crowd sourced photo app that I see in my news feed has only got 300+ Monthly Active Users! I doubt that’s enough to make it work, I won’t bother’</i>. Cheers Facebook! See <i style="mso-bidi-font-style: normal;">‘Don’t be too quiet with your idea’</i>. <b style="mso-bidi-font-weight: normal;">Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Understand the value proposition of your website.</b> If your business is through a mobile app and not a website, don’t waste valuable engineering talent on your website – it is just a marketing channel. We built ours in <a href="http://www.adobe.com/uk/products/muse.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.adobe.com']);">Adobe Muse</a> for almost zero cost with no real technical knowledge required. We could always have built a better one with <a href="http://getbootstrap.com/2.3.2/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://getbootstrap.com']);">Twitter Bootstrap</a> later if we needed to. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Don’t get carried away with Product Videos.</b> Don’t make a product video until you have a product and then keep it simple as your product will change. If you focus on the vision rather than the detail then you can make it in tandem to your product. Our videos were very helpful at explaining our offering, but we probably should have been more ruthless and only had one video – see <i style="mso-bidi-font-style: normal;">‘Importance of a clean message’</i>. <b style="mso-bidi-font-weight: normal;">Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Get your head round the concept of </b><a href="http://www.forbes.com/sites/markfidelman/2013/10/15/meet-the-growth-hacking-wizard-behind-facebook-twitter-and-quoras-astonishing-success/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.forbes.com']);"><b style="mso-bidi-font-weight: normal;">Growth Hacking</b></a><b style="mso-bidi-font-weight: normal;"> and data analysis. </b>Once launched we were ruthless about analysing Shnergle’s limited data to try and understand what was happening. We tried lots of experiments to improve results and measure what worked best. Unfortunately the concept was sufficiently flawed that we couldn’t make a great deal of headway in this area. <b style="mso-bidi-font-weight: normal;">Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Product</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Build a seeding product not a final vision.</b> This is the single biggest product execution mistake we made, but we thought we had seen it and avoided it. How did <a href="https://www.hailocab.com/london" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.hailocab.com']);"><span class="SpellE">Hailo</span></a> have so many black cabs available when it launched its app?</p>
+<ol>
+<li>
+<div class="MsoListParagraphCxSpFirst" style="text-indent: -18.0pt; mso-list: l0 level1 lfo3;">      It first released a driver app that provided a social network for drivers, helping them analyse their activity</div>
+</li>
+<li>
+<div class="MsoListParagraphCxSpFirst" style="text-indent: -18.0pt; mso-list: l0 level1 lfo3;">      Three of the Founders are former cabbies so they were able to sell it to the community as a fight back against Addison Lee</div>
+</li>
+</ol>
+<p class="MsoNormal">We thought we had mimicked this by allowing merchants to setup accounts from the word go and getting the email addresses of almost every bar in central London prior to launch. They were going to setup immediately and start creating content for the inevitable onslaught of users<i style="mso-bidi-font-style: normal;">. [Tumbleweed passes]</i>. From over 3,000 email addresses we got precisely zero response in the form of advance signups, or downloads on launch. We got a bit of web traffic, but it was clear they wanted the users first (if they were even interested in the concept). We tried to fake it by racing around London ourselves adding content and getting our good friends to do the same, but it wasn’t enough. We compounded our own problems by putting an 8 day limit on how long content would show in the app on the basis people wouldn’t want to see older content than that. To be fair, no-one did want to see content older than 8 days….but they wanted to see something, and the 8 day limit meant the app often showed lots of ‘No activity in 8 days’ icons. This was a colossal error. We should have built some kind of service that got all the Bars using us and uploading photos long before we build the Shnergle app for consumers. <b style="mso-bidi-font-weight: normal;">EPIC Fail!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Native, Hybrid, <span class="SpellE">WebApp</span>, Responsive Web etc.</b> Make your Native/hybrid web decision based on when/where you expect your customers to be using your product, and to balance risk/time/cost. We assessed that customers would be using the app in a hurry whilst on the move, so a slick, highly responsive app utilising a number of native APIs was required. Considering the uncertainty around cross platform development, it therefore became a no brainer to go fully native. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">UX is critical – focus on one key functionality.</b> The focus of our app was real time location based photo sharing and viewing. Although we worked with an excellent UX designer (<a href="http://uk.linkedin.com/pub/steven-blyth/1/36a/973" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://uk.linkedin.com']);">Steve Blyth</a>) we tried (I think against Steve’s better judgement) to add too much into the app. We had RSVP’ing, Comments and a whole load of other unnecessary elements that we wasted time designing and building, slowing product release. Although we did well with an intuitive design, we should have kept it a lot simpler. If we hadn’t wasted as much time on unnecessary features we would have been able to polish the app much more too. <b style="mso-bidi-font-weight: normal;">Neutral</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Instrument Everything.</b> As our eventual Business Model was going to be based on Data Analytics and we were using Facebook login exclusively (which gives you loads of demographic and use data) we thought we had already instrumented everything to the degree needed in our own systems. We had about 90% of what we needed but it wasn’t well tied together or easy to dive into. We should have just used <a href="http://www.flurry.com/flurry-analytics.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.flurry.com']);">Flurry</a> from the word go and tied events to absolutely everything. Treat the data you need, and the data you are going to provide customers as different beasts, at least initially. <b style="mso-bidi-font-weight: normal;">Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Keep login simple but provide choice.</b> Even Facebook said at the FB Start event that you shouldn’t just use a Facebook login, but should offer users the option of an email login alternative. In this scenario Facebook claim conversion rates from download to user can be as high as 70-80%. Although we had a slick login flow from only using Facebook, our conversion rate was 59% so this could have had a material impact if we had included email too. Twitter login is a complete waste of effort though – we looked at it and decided against. Considering the number of our users who actually added twitter accounts (2.3%) this was a good call. <b style="mso-bidi-font-weight: normal;">Partial Success.</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Take as little Facebook data as possible.</b> Only take the Facebook data you actually need and only take it when you need it, then people are more likely to agree to it. That is exactly what we did, hence having quite a good conversion rate for a Facebook login only app. <b style="mso-bidi-font-weight: normal;">Success!</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Understand the friction of the Apple app review process.</b> Apple make great experiences, but they are a pain in the ass to deal with. I agree they should review apps to conduct quality control, but they seriously need to get a grip when reviewing app updates. It’s not exactly clear what they test, but they will reject it if you have the audacity to mention (for example) ‘Google’, even if the context is transferring from Google Maps to Apple maps. That is pathetic. When initially submitting the ‘In review’ took about 2-3 days for us; when reviewing updates this dropped to 5-12 hours. It really wasn’t clear what they were doing for all this time as we didn’t get any activity on our servers during update reviews, only on the initial review. For both circumstances the ‘waiting for review’ period was about 6 days. Unsurprisingly this jumped to over 2 weeks over the <span class="SpellE">iOS</span> 7 launch. <b style="mso-bidi-font-weight: normal;">Neutral</b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-size: 16.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Conclusions</span></b></p>
+<p class="MsoNormal">Congratulations – you made it to the end!</p>
+<p class="MsoNormal">I can honestly say 2013 has been on a par with my first Iraq tour (it was a particularly rubbish 6-7 months when I was 22-23) for the shaping effect I suspect it will have on my life. Everyone in the team has learned an incredible amount in a fairly compressed time period, and given our new networks and experiences we should be able to do the next startup more efficiently, more effectively and ultimately more successfully. I am sure most of what we have learned will seem obvious to those already in the tech sector, but hopefully we have just provided some tips for anyone considering leaping into Tech <span class="SpellE">startups</span> in the near future. If nothing else we have provided an effective way of recording our lessons learned both for our own team, and for our Investors.</p>
+											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						<span class="bl_bookmark">Bookmark the  <a href="http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/" title="Permalink to Shnergle Post Mortem" rel="bookmark">permalink</a>. </span>											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://www.shnergle.com/blog/2013/10/21/its_the_end_of_the_line_for_shnergle/" rel="prev"><span class="meta-nav">&laquo;</span> It&#8217;s the end of the line for Shnergle</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+	<p class="nocomments">Comments are closed.</p>
+
+								
+</div><!-- #comments -->
+
+
+						</div><!-- #content -->
+			<div id="primary" class="widget-area" role="complementary">
+		
+				
+			<ul class="xoxo">
+						<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.shnergle.com/blog/2013/10/23/shnergle-post-mortem/" title="Shnergle Post Mortem">Shnergle Post Mortem</a>
+						</li>
+					<li>
+				<a href="http://www.shnergle.com/blog/2013/10/21/its_the_end_of_the_line_for_shnergle/" title="It&#8217;s the end of the line for Shnergle">It&#8217;s the end of the line for Shnergle</a>
+						</li>
+					<li>
+				<a href="http://www.shnergle.com/blog/2013/09/30/how-shnergle-promotions-work/" title="How Shnergle promotions work">How Shnergle promotions work</a>
+						</li>
+					<li>
+				<a href="http://www.shnergle.com/blog/2013/08/24/shnergle-has-launched/" title="Shnergle has launched!">Shnergle has launched!</a>
+						</li>
+					<li>
+				<a href="http://www.shnergle.com/blog/2013/07/31/perfect-brew-timing/" title="Perfect brew timing">Perfect brew timing</a>
+						</li>
+				</ul>
+		</li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://www.shnergle.com/blog/2013/10/' title='October 2013'>October 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/09/' title='September 2013'>September 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/08/' title='August 2013'>August 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/07/' title='July 2013'>July 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/06/' title='June 2013'>June 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/05/' title='May 2013'>May 2013</a></li>
+	<li><a href='http://www.shnergle.com/blog/2013/04/' title='April 2013'>April 2013</a></li>
+		</ul>
+</li>			</ul>
+
+			<ul class="xoxo">
+							</ul>
+			
+						
+		</div><!-- #primary .widget-area -->
+
+ <!-- 1c -->		</section><!-- #container -->
+
+	<div style="clear:both;"></div>
+
+	</div> <!-- #forbottom -->
+	</div><!-- #main -->
+
+
+	<footer id="footer" role="contentinfo">
+		<div id="colophon">
+		
+			
+			
+		</div><!-- #colophon -->
+
+		<div id="footer2">
+		
+				<div style="text-align:center;clear:both;padding-top:4px;" >
+		<a href="http://www.shnergle.com/blog/" title="Shnergle blog" rel="home">
+			Shnergle blog</a> | Powered by <a href="http://www.cryoutcreations.eu" title="Mantra Theme by Cryout Creations">Mantra</a> &amp; <a href="http://wordpress.org/"
+			title="Semantic Personal Publishing Platform">  WordPress.		</a>
+	</div><!-- #site-info -->
+<div class="socials" id="sfooter">
+			<a target="_blank" rel="nofollow" href="https://www.facebook.com/shnergle" class="socialicons social-Facebook" title="Facebook"><img alt="Facebook" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/Facebook.png" /></a>
+			<a target="_blank" rel="nofollow" href="https://twitter.com/shnergle" class="socialicons social-Twitter" title="Twitter"><img alt="Twitter" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/Twitter.png" /></a>
+			<a target="_blank" rel="nofollow" href="http://www.youtube.com/user/ShnergleVids" class="socialicons social-YouTube" title="YouTube"><img alt="YouTube" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/YouTube.png" /></a>
+			<a target="_blank" rel="nofollow" href="http://www.linkedin.com/company/shnergle" class="socialicons social-LinkedIn" title="LinkedIn"><img alt="LinkedIn" src="http://www.shnergle.com/blog/wp-content/themes/mantra/images/socials/LinkedIn.png" /></a></div>			
+		</div><!-- #footer2 -->
+
+	</footer><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<link rel='stylesheet' id='mantra-mobile-css'  href='http://www.shnergle.com/blog/wp-content/themes/mantra/style-mobile.css?ver=3.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201714'></script>
+
+</body>
+</html>
+<!-- WP Super Cache is installed but broken. The constant WPCACHEHOME must be set in the file wp-config.php and point at the WP Super Cache plugin directory. -->
